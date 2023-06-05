@@ -67,7 +67,7 @@ streamlit.write('Thanks for adding ', fruit_choice)
 
 #this code, as currently written, will illustrate that we have an issue with control of flow
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
-     streamlit.stop()
+streamlit.stop()
      
 # allow the end user to add a fruit to the list
 def insert_row_snowflake(new_fruit):
